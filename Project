@@ -1,0 +1,89 @@
+
+void Cloud()
+{
+    //1
+
+
+/*
+    //2
+    //3
+    //4
+    */
+
+}
+
+void movingCloud()
+{
+    glColor3f(1,1,1);
+    cloudMove();
+    glPushMatrix();
+        glTranslatef(cloud1,1,0);
+        circle(3,5,5,88);
+        circle(3,5,8,91);
+        circle(3,5,12,92);
+        circle(3,5,12,87);
+        circle(3,5,7,85);
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(cloud2,-2,0);
+        circle(3,5,30,88);
+        circle(3,5,33,91);
+        circle(3,5,37,92);
+        circle(3,5,37,87);
+        circle(3,5,32,85);
+
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(cloud3,-3,0);
+        circle(3,5,5,88);
+        circle(3,5,8,91);
+        circle(3,5,12,92);
+        circle(3,5,12,87);
+        circle(3,5,7,85);
+
+    glPopMatrix();
+    glPushMatrix();
+        glTranslatef(cloud4,1,0);
+        circle(3,5,30,88);
+        circle(3,5,33,91);
+        circle(3,5,37,92);
+        circle(3,5,37,87);
+        circle(3,5,32,85);
+
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(cloud5,1,0);
+        circle(3,5,5,88);
+        circle(3,5,8,91);
+        circle(3,5,12,92);
+        circle(3,5,12,87);
+        circle(3,5,7,85);
+    glPopMatrix();
+}
+
+#keyboard part 
+void my_keyboard(unsigned char key,int x, int y)
+{
+
+	switch (key) {
+
+
+
+		case 'n':
+            nightMode();
+
+			break;
+
+
+		case 'd':
+			 dayMode();
+			 break;
+
+
+	  default:
+			break;
+	}
+}
