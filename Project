@@ -19,12 +19,7 @@ void river()
 
     glEnd();
 
-    //small boat move
-    movingSmallBoat();
-   // boat(76,40,7);
-   //boat2();
-   //moving big boat
-   movingBigBoat();
+   
 }
 
 
@@ -50,10 +45,6 @@ void nightRiver()
 
     glEnd();
 
-    //small boat move
-    movingSmallBoat();
-    //moving big boat
-    movingBigBoat();
 }
 
 void rightTriangle(float x, float y, float distance,float height)
