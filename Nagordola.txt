@@ -1,0 +1,91 @@
+/nagordola stand//
+    glBegin(GL_POLYGON);// Draw a Red 1x1 Square centered at origin
+    glColor3ub(192,192,192);
+    //glColor3ub(0,206,209);
+
+    glVertex2f(31.0f,2.0f);
+    glVertex2f(30.0f,-6.0f);
+    glVertex2f(34.0f,-6.0f);
+    glVertex2f(33.0f,2.0f);
+    glVertex2f(32.5f,3.0f);
+    glVertex2f(31.5f,3.0f);
+
+
+
+    glEnd();
+
+/*Nagordola*/
+     //circle//
+    glPushMatrix();
+    glColor3ub(0,0,0);
+    glTranslatef(32.0f,3.0f,0.0f);
+    glutSolidSphere(5.0,150,150);
+	glRotatef(_angle1, 0.0f, 0.0f,1.0f);
+
+
+
+
+
+    glBegin(GL_QUADS);// first stand to hold the blade
+    glColor3ub(255,255,0);
+    glVertex2f(0.0f,0.0f);
+    glVertex2f(5.0f,0.0f);
+    glVertex2f(5.0f,0.25f);
+    glVertex2f(0.0f,0.25f);
+    glEnd();
+
+    glBegin(GL_QUADS);// second stand to hold the blade
+    glColor3ub(255,255,0);
+    glVertex2f(0.0f,0.0f);
+    glVertex2f(0.0f,5.0f);
+    glVertex2f(-0.25f,5.0f);
+    glVertex2f(-0.25f,0.0f);
+    glEnd();
+
+    glBegin(GL_QUADS);// third stand to hold the blade
+    glColor3ub(255,255,0);
+    glVertex2f(0.0f,-0.25f);
+    glVertex2f(0.0f,0.0f);
+    glVertex2f(-5.0f,0.0f);
+    glVertex2f(-5.0f,-0.25f);
+    glEnd();
+
+    glBegin(GL_QUADS);// fourth stand to hold the blade
+    glColor3ub(255,255,0);
+    glVertex2f(0.25f,0.0f);
+    glVertex2f(0.0f,0.0f);
+    glVertex2f(0.0f,-5.0f);
+    glVertex2f(0.25f,-5.0f);
+    glEnd();
+
+
+glBegin(GL_QUADS);//1st cabin
+glColor3ub(255,0,255);
+glVertex2f(5.0f,1.35f);
+glVertex2f(7.25f,1.35f);
+glVertex2f(7.25f,-1.0f);
+glVertex2f(5.0f,0.-1.0f);
+glEnd();
+
+glBegin(GL_QUADS);//2nd cabin
+
+glVertex2f(1.35f, 5.0f);
+glVertex2f(1.35f,7.25f);
+glVertex2f(-1.0f,7.25f);
+glVertex2f(-1.0f,5.0f);
+glEnd();
+
+glBegin(GL_QUADS);//3rd cabin
+glVertex2f(-5.0f,-1.35f);
+glVertex2f(-7.25f,-1.35f);
+glVertex2f(-7.25f,1.0f);
+glVertex2f(-5.0f,1.0f);
+glEnd();
+
+glBegin(GL_QUADS);//4th cabin
+
+glVertex2f(-1.35f, -5.0f);
+glVertex2f(-1.35f,-7.25f);
+glVertex2f(1.0f,-7.25f);
+glVertex2f(1.0f,-5.0f);
+glEnd();
