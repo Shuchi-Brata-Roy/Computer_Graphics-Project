@@ -1,7 +1,8 @@
 # Computer Graphics-Project
 
 **Project title - Village Fair**
-This is our Computer graphics course final project. 
+
+This is our Computer Graphics course final project. 
 
 _Group Members-
 i) Siam Tafimul Islam (ID_20-43021-1)
